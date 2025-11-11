@@ -17,20 +17,49 @@
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
 
-  <!-- Navbar -->
-  <nav class="p-6 flex justify-between items-center border-b border-gray-200 dark:border-gray-700">
+<!-- ===== Navbar ===== -->
+<nav class="p-6 flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-200 dark:border-gray-700">
+  <!-- Left side: Name + Icons -->
+  <div>
     <h1 class="text-2xl font-bold">Dilen Damian</h1>
-    <span class="text-sm text-gray-500 dark:text-gray-400">
-      Website developed with support from ChatGPT
-    </span>
-  </nav>
 
-  <!-- About Me Section -->
-  <section id="intro" class="max-w-6xl mx-auto px-6 py-20">
-    <h2 class="text-4xl font-bold mb-4">About Me</h2>
-    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mb-10">
-      Hi, I’m John Doe — a designer, engineer, and problem solver passionate about creating clean, functional solutions.
-      This website showcases my projects and creative work. Scroll down or use the sidebar to explore!
+    <!-- Social Icons -->
+    <div class="flex space-x-4 mt-3 text-gray-600 dark:text-gray-300">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="hover:text-blue-600 transition" aria-label="LinkedIn">
+        <i data-lucide="linkedin" class="w-5 h-5"></i>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/yourusername" target="_blank" class="hover:text-gray-900 dark:hover:text-white transition" aria-label="GitHub">
+        <i data-lucide="github" class="w-5 h-5"></i>
+      </a>
+      <!-- Email -->
+      <a href="mailto:your.email@example.com" class="hover:text-blue-500 transition" aria-label="Email">
+        <i data-lucide="mail" class="w-5 h-5"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Pinned to top-right -->
+  <span class="absolute right-6 text-sm text-gray-500 dark:text-gray-400">
+    Website developed with support from ChatGPT
+  </span>
+</nav>
+
+<!-- Load Lucide icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+
+<!-- ===== About Me Section ===== -->
+<section id="intro" class="max-w-4xl mx-auto px-6 py-20 text-center">
+  <h2 class="text-4xl font-bold mb-6">About Me</h2>
+
+  <p class="text-lg text-gray-600 dark:text-gray-300 mb-10">
+      Hi, I’m Dilen — a mechanical engineer and problem solver passionate about creating clean, functional and elegant solutions.
+      This github hosted website showcases my projects and creative work. Scroll down or use the sidebar to explore!
     </p>
 
     <!-- Skills Section -->
@@ -38,13 +67,14 @@
       <h3 class="text-2xl font-semibold mb-4">Skills</h3>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Mechanical Design</div>
-        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Creo</div>
-        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">JavaScript</div>
-        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Tailwind CSS</div>
-        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">React</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">PTC Creo & Solidworks</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Tool Design and Development</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">LS Dyna & Calculix Solvers </div>
         <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Python</div>
-        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Creo</div>
-        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">3D Modeling</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">OpenFoam</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Fusion 360 CAM</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Additive Manufacturing</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Design for Manufacuring & Assembly</div>
       </div>
     </div>
   </section>
