@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilen D | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .active {
+      color: #3b82f6; /* Tailwind's blue-500 */
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+  <!-- Navbar -->
+  <nav class="p-6 flex justify-between items-center border-b border-gray-200 dark:border-gray-700">
+    <h1 class="text-2xl font-bold">Dilen Damian</h1>
+    <span class="text-sm text-gray-500 dark:text-gray-400">
+      Website developed with support from ChatGPT
+    </span>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="intro" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold mb-4">About Me</h2>
+    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mb-10">
+      Hi, I’m John Doe — a designer, engineer, and problem solver passionate about creating clean, functional solutions.
+      This website showcases my projects and creative work. Scroll down or use the sidebar to explore!
+    </p>
+
+    <!-- Skills Section -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Skills</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Mechanical Design</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Creo</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">JavaScript</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Tailwind CSS</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">React</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Python</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">Creo</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow text-center">3D Modeling</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto flex px-6 mt-10">
+    <!-- Sidebar Index -->
+    <aside class="hidden md:block w-1/4 sticky top-24 h-fit">
+      <ul id="project-index" class="space-y-3 border-l border-gray-300 dark:border-gray-700 pl-4">
+        <li><a href="#intro" class="block hover:text-blue-500">Introduction</a></li>
+        <li><a href="#project1" class="block hover:text-blue-500">Project One</a></li>
+        <li><a href="#project2" class="block hover:text-blue-500">Project Two</a></li>
+        <li><a href="#project3" class="block hover:text-blue-500">Project Three</a></li>
+      </ul>
+    </aside>
+
+    <!-- Project Details -->
+    <main class="w-full md:w-3/4 md:ml-10 space-y-32">
+      <!-- Section Heading -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold">Projects</h2>
+        <p class="text-gray-600 dark:text-gray-300">
+          Below are some of the projects I’ve worked on recently.
+        </p>
+      </div>
+
+      <!-- Project 1 -->
+      <section id="project1" class="min-h-screen scroll-mt-24">
+        <h3 class="text-2xl font-semibold mb-4">Project One</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Placeholder description for Project One. Describe the goal, tools used, and outcomes here.
+        </p>
+      </section>
+
+      <!-- Project 2 -->
+      <section id="project2" class="min-h-screen scroll-mt-24">
+        <h3 class="text-2xl font-semibold mb-4">Project Two</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Placeholder description for Project Two. Include visuals or demo video if available.
+        </p>
+      </section>
+
+      <!-- Project 3 -->
+      <section id="project3" class="min-h-screen scroll-mt-24">
+        <h3 class="text-2xl font-semibold mb-4">Project Three</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Placeholder description for Project Three. Focus on your contribution or challenges solved.
+        </p>
+      </section>
+    </main>
+  </section>
+
+  <!-- Scroll Highlight Script -->
+  <script>
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll("#project-index a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
