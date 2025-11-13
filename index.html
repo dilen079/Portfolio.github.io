@@ -17,6 +17,12 @@
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
 
+<!-- Load Lucide icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
 <!-- ===== Navbar ===== -->
 <nav class="relative p-6 flex flex-col items-center border-b border-gray-200 dark:border-gray-700 text-center">
   <!-- Centered Name + Icons -->
@@ -39,19 +45,14 @@
       </a>
     </div>
   </div>
-
-  <!-- Disclaimer (bottom-right corner) -->
-  <span class="absolute bottom-2 right-6 text-sm text-gray-500 dark:text-gray-400">
-    Website developed with support from ChatGPT
-  </span>
 </nav>
 
-<!-- Load Lucide icons -->
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
-
+<!-- ===== Disclaimer (below navbar) ===== -->
+<div class="flex justify-end pr-6 mt-2">
+  <span class="text-sm text-gray-500 dark:text-gray-400">
+    Website developed with support from ChatGPT
+  </span>
+</div>
 
 
 <!-- ===== About Me Section ===== -->
