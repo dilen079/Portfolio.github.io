@@ -18,39 +18,34 @@
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
 
 <!-- ===== Navbar ===== -->
-<nav class="p-6 flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-200 dark:border-gray-700">
-  <!-- Left side: Name + Icons -->
+<nav class="relative p-6 flex flex-col items-center border-b border-gray-200 dark:border-gray-700 text-center">
+  <!-- Centered Name + Icons -->
   <div>
-    <h1 class="text-2xl font-bold">Dilen Damian</h1>
+    <h1 class="text-3xl font-bold mb-3">Dilen Damian</h1>
 
     <!-- Social Icons -->
-    <div class="flex space-x-4 mt-3 text-gray-600 dark:text-gray-300">
+    <div class="flex justify-center space-x-6 text-gray-600 dark:text-gray-300">
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="hover:text-blue-600 transition" aria-label="LinkedIn">
-        <i data-lucide="linkedin" class="w-5 h-5"></i>
+        <i data-lucide="linkedin" class="w-6 h-6"></i>
       </a>
       <!-- GitHub -->
       <a href="https://github.com/yourusername" target="_blank" class="hover:text-gray-900 dark:hover:text-white transition" aria-label="GitHub">
-        <i data-lucide="github" class="w-5 h-5"></i>
+        <i data-lucide="github" class="w-6 h-6"></i>
       </a>
       <!-- Email -->
       <a href="mailto:your.email@example.com" class="hover:text-blue-500 transition" aria-label="Email">
-        <i data-lucide="mail" class="w-5 h-5"></i>
+        <i data-lucide="mail" class="w-6 h-6"></i>
       </a>
     </div>
   </div>
 
-  <!-- Pinned to top-right -->
-  <span class="absolute right-6 text-sm text-gray-500 dark:text-gray-400">
+  <!-- Disclaimer (bottom-right corner) -->
+  <span class="absolute bottom-2 right-6 text-sm text-gray-500 dark:text-gray-400">
     Website developed with support from ChatGPT
   </span>
 </nav>
 
-<!-- Load Lucide icons -->
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
 
 
 <!-- ===== About Me Section ===== -->
